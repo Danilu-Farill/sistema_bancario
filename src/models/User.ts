@@ -11,7 +11,6 @@ User.init({
         primaryKey: true,
         autoIncrement: true,
         field: 'id_user',
-
     },
     username: {
         type: DataTypes.STRING,
@@ -19,7 +18,6 @@ User.init({
     },
     password: {
         type: DataTypes.STRING,   
-
         allowNull: false
     }
 }, {
@@ -27,7 +25,6 @@ User.init({
     modelName: "User",
     tableName: "users",
     timestamps: false   
-
 });
 
 export default User;

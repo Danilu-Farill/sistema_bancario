@@ -1,7 +1,6 @@
-// src/index.ts
-import { sequelize } from './config/sequelize';
+import {sequelize} from './config/sequelize';
 
-const testConnection = async () => {
+export const testConnection = async () => {
   try {
     await sequelize.authenticate();
     console.log('Conexión a la base de datos establecida correctamente.');
@@ -12,3 +11,4 @@ const testConnection = async () => {
 };
 
 testConnection();
+
